@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+
+<head>
+    <title>Proiect Rotaru Teodor-Gabriel - Editor SVG</title>
+</head>
+
+<body>
+    <div>
+        <input type="color" id="colorPickerElement">
+        <input type="range" min="1" max="15" value="1" class="sliderInput" id="thicknessSlider">
+        <button id="btnClearSVG" type="button">Clear SVG</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="btnDownloadPNG" type="button">Download PNG</button>
+        <button id="btnDownloadSVG" type="button">Download SVG</button>
+    </div>
+
+    <br>
+
+    <div>
+        <button id="btnDrawLine" type="button">
+            <img src="Media\drawLineImage.png" width="20" height="20" />
+        </button>
+
+        <button id="btnDrawEllipse" type="button">
+            <img src="Media\DrawEllipseImage.png" width="20" height="20" />
+        </button>
+
+        <button id="btnDrawRectangle" type="button">
+            <img src="Media\DrawRectangleImage.jpg" width="20" height="20" />
+        </button>
+
+        <button id="btnDrawDiamond" type="button">
+            <img src="Media\drawDiamondImage.jpg" width="20" height="20" />
+        </button> &nbsp;&nbsp;&nbsp;
+
+        <button id="btnFillShape" type="button" width="15" height="20">Fill</button>
+        <button id="btnMirror" type="button" width="15" height="20">Mirror</button>
+        <button id="btnUndo" type="button" width="15" height="20">Undo</button>
+    </div>
+
+    <br><br>
+
+    <div>
+        <svg id="svgEditor" class="generalSVG" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1800" height="955">
+            <rect id="rectGeneral" class="selectieForma" width="0" height="0" style="display:none;"></rect>
+            <line id="lineGeneral" class="selectieForma" style="display:none;"></line>
+            <ellipse id="ellipseGeneral" class="selectieForma" style="display:none;"></ellipse>
+            <polygon id="diamondGeneral" class="selectieForma" style="display:none;"></polygon>
+        </svg>
+
+        <canvas id="canvasForPngDownload" width="1800" height="955" style="display:none;"></canvas>
+    </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,32 @@
+button {
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    font-size: 15px;
+    border-color:seagreen;
+    border-radius: 5px;
+    border-width: 4px;
+    border-style: groove;
+    color: white;
+    background-color: green;
+}
+
+body {
+    background-color: #80BD9E;
+}
+
+svg {
+    background-color: white;
+    border-color: rgb(208, 255, 0);
+    border-style: ridge;
+    border-width: 0.5rem;
+}
+
+.selectieForma {
+    fill: pink;
+    stroke: red;
+}
+
+.selectat {
+    stroke-opacity: 0.3;
+} 
